@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ListTable" msprop:Generator_TableClassName="ListTableDataTable" msprop:Generator_TableVarName="tableListTable" msprop:Generator_RowChangedName="ListTableRowChanged" msprop:Generator_TablePropName="ListTable" msprop:Generator_RowDeletingName="ListTableRowDeleting" msprop:Generator_RowChangingName="ListTableRowChanging" msprop:Generator_RowEvHandlerName="ListTableRowChangeEventHandler" msprop:Generator_RowDeletedName="ListTableRowDeleted" msprop:Generator_RowClassName="ListTableRow" msprop:Generator_UserTableName="ListTable" msprop:Generator_RowEvArgName="ListTableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:Caption="Идентификатор" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
+              <xs:element name="AreaName" msdata:Caption="Участок" msprop:Generator_ColumnVarNameInTable="columnAreaName" msprop:Generator_ColumnPropNameInRow="AreaName" msprop:Generator_ColumnPropNameInTable="AreaNameColumn" msprop:Generator_UserColumnName="AreaName" type="xs:string" minOccurs="0" />
+              <xs:element name="Street" msdata:Caption="Улица" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnPropNameInTable="StreetColumn" msprop:Generator_UserColumnName="Street" type="xs:string" minOccurs="0" />
+              <xs:element name="HouseNumber" msdata:Caption="Дом" msprop:Generator_ColumnVarNameInTable="columnHouseNumber" msprop:Generator_ColumnPropNameInRow="HouseNumber" msprop:Generator_ColumnPropNameInTable="HouseNumberColumn" msprop:Generator_UserColumnName="HouseNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="Housing" msdata:Caption="Корпус" msprop:Generator_ColumnVarNameInTable="columnHousing" msprop:Generator_ColumnPropNameInRow="Housing" msprop:Generator_ColumnPropNameInTable="HousingColumn" msprop:Generator_UserColumnName="Housing" type="xs:string" minOccurs="0" />
+              <xs:element name="Front" msdata:Caption="Парадная" msprop:Generator_ColumnVarNameInTable="columnFront" msprop:Generator_ColumnPropNameInRow="Front" msprop:Generator_ColumnPropNameInTable="FrontColumn" msprop:Generator_UserColumnName="Front" type="xs:string" minOccurs="0" />
+              <xs:element name="IDNumberOfElevator" msdata:Caption="Рег ном" msprop:Generator_ColumnVarNameInTable="columnIDNumberOfElevator" msprop:Generator_ColumnPropNameInRow="IDNumberOfElevator" msprop:Generator_ColumnPropNameInTable="IDNumberOfElevatorColumn" msprop:Generator_UserColumnName="IDNumberOfElevator" type="xs:string" minOccurs="0" />
+              <xs:element name="IDFactoryOfElevator" msdata:Caption="Зав ном" msprop:Generator_ColumnVarNameInTable="columnIDFactoryOfElevator" msprop:Generator_ColumnPropNameInRow="IDFactoryOfElevator" msprop:Generator_ColumnPropNameInTable="IDFactoryOfElevatorColumn" msprop:Generator_UserColumnName="IDFactoryOfElevator" type="xs:string" minOccurs="0" />
+              <xs:element name="ElevatorName" msdata:Caption="Имя лифта" msprop:Generator_ColumnVarNameInTable="columnElevatorName" msprop:Generator_ColumnPropNameInRow="ElevatorName" msprop:Generator_ColumnPropNameInTable="ElevatorNameColumn" msprop:Generator_UserColumnName="ElevatorName" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason" msdata:Caption="Причина вызова" msprop:Generator_ColumnVarNameInTable="columnReason" msprop:Generator_ColumnPropNameInRow="Reason" msprop:Generator_ColumnPropNameInTable="ReasonColumn" msprop:Generator_UserColumnName="Reason" type="xs:string" minOccurs="0" />
+              <xs:element name="TimeOfRequest" msdata:Caption="Поступила" msprop:Generator_ColumnVarNameInTable="columnTimeOfRequest" msprop:Generator_ColumnPropNameInRow="TimeOfRequest" msprop:Generator_ColumnPropNameInTable="TimeOfRequestColumn" msprop:Generator_UserColumnName="TimeOfRequest" type="xs:string" minOccurs="0" />
+              <xs:element name="Time2" msdata:Caption="Передана" msprop:Generator_ColumnVarNameInTable="columnTime2" msprop:Generator_ColumnPropNameInRow="Time2" msprop:Generator_ColumnPropNameInTable="Time2Column" msprop:Generator_UserColumnName="Time2" type="xs:string" minOccurs="0" />
+              <xs:element name="NameOfMechanic" msdata:Caption="Механик" msprop:Generator_ColumnVarNameInTable="columnNameOfMechanic" msprop:Generator_ColumnPropNameInRow="NameOfMechanic" msprop:Generator_ColumnPropNameInTable="NameOfMechanicColumn" msprop:Generator_UserColumnName="NameOfMechanic" type="xs:string" minOccurs="0" />
+              <xs:element name="Delay" msdata:Caption="Простой" msprop:Generator_ColumnVarNameInTable="columnDelay" msprop:Generator_ColumnPropNameInRow="Delay" msprop:Generator_ColumnPropNameInTable="DelayColumn" msprop:Generator_UserColumnName="Delay" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="AreaTableKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ListTable" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
