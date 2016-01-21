@@ -13,7 +13,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           // SqlDataSource1.ConnectionString = common.getConnectionString();
         }
 
         protected void ButtonSave_Click(object sender, EventArgs e)
@@ -21,6 +21,7 @@ namespace WebApplication1
             DataSetArea areaDataSet = new DataSetArea();
             //read from DB
             DataSourceSelectArguments selectSt = new DataSourceSelectArguments();
+            SqlDataSource1.ConnectionString = common.getConnectionString();
             DataView allDataDataView = (DataView)SqlDataSource1.Select(selectSt);
             foreach (DataRowView d in allDataDataView)
             {
@@ -37,13 +38,7 @@ namespace WebApplication1
 
             //TODO: Add to BD
             int t = 8;
-            string sConnectionString;
-            //Data Source=LEOPARDIC\SQLEXPRESS;Initial Catalog=Lift;Integrated Security=True;Pooling=False
-            sConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=WebLift;Integrated Security=False;Password=sa777;User ID=sa;";
-            //sConnectionString = "Password=3897409mike;User ID=leopardic\\east;"
-            //                      + "Initial Catalog=Lift;"
-            //                      + "Integrated Security=True;"
-            //                      + "Data Source=LEOPARDIC\\SQLEXPRESS";
+            string sConnectionString = common.getConnectionString();
             SqlConnection objConn
                 = new SqlConnection(sConnectionString);
             objConn.Open();

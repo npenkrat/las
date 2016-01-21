@@ -72,13 +72,8 @@ namespace WebApplication1
         }
         static DataSet FillDataSet(string SQLquery)
         {
-            string sConnectionString;
-            sConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=WebLift;Integrated Security=False;Password=sa777;User ID=sa;";
-            //Data Source=LEOPARDIC\SQLEXPRESS;Initial Catalog=Lift;Integrated Security=True;Pooling=False
-            //sConnectionString = "Password=3897409mike;User ID=leopardic\\east;"
-            //                      + "Initial Catalog=Lift;"
-            //                      + "Integrated Security=True;"
-            //                      + "Data Source=LEOPARDIC\\SQLEXPRESS";
+            string sConnectionString = common.getConnectionString();
+
             SqlConnection objConn
                 = new SqlConnection(sConnectionString);
             objConn.Open();

@@ -19,7 +19,7 @@
          </tr>
         <tr>
             <td>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" SelectCommand="SELECT Name FROM AreaTable" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=WebLift;Integrated Security=False;Password=sa777;User ID=sa;" ProviderName="System.Data.SqlClient"> </asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" SelectCommand="SELECT Name FROM AreaTable" ProviderName="System.Data.SqlClient"> </asp:SqlDataSource>
             </td>
             <td>
             </td>

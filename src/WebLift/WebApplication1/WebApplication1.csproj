@@ -149,6 +149,7 @@
     <Compile Include="AddAddressToArea.aspx.designer.cs">
       <DependentUpon>AddAddressToArea.aspx</DependentUpon>
     </Compile>
+    <Compile Include="common.cs" />
     <Compile Include="DataSetList.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
