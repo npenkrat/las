@@ -62,8 +62,10 @@
                             </p>
                         </fieldset>
                         <p class="submitButton">
-                            <asp:Button ID="CreateUserButton" runat="server" CommandName="MoveNext" Text="Создать пользователя" 
-                                 ValidationGroup="RegisterUserValidationGroup"/>
+                           <asp:Button ID="CreateUserButton" runat="server" CommandName="MoveNext" Text="Создать пользователя" 
+                                 ValidationGroup="RegisterUserValidationGroup"  />
+                           <!--  <asp:Button ID="Button1" runat="server"  Text="Создать пользователя" 
+                                 ValidationGroup="RegisterUserValidationGroup" OnClientClick="click1" />-->
                         </p>
                     </div>
                 </ContentTemplate>

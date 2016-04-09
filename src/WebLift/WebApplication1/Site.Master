@@ -7,6 +7,12 @@
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-weight: normal;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
@@ -14,7 +20,7 @@
         <div class="header">
             <div class="title">
                 <h1>
-                    Лифтовая Аварийная Служба
+                    <span class="style1"><strong style="color: #FFFFFF">Лифтовая Аварийная Служба</strong></span>
                 </h1>
             </div>
             <div class="loginDisplay">
@@ -29,7 +35,9 @@
                 </asp:LoginView>
             </div>
             <div class="clear hideSkiplink">
-                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    ForeColor="Black">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Главная"/>
                         <asp:MenuItem NavigateUrl="~/List.aspx" Text="Список заявок"/>
