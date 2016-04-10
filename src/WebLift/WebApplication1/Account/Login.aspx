@@ -11,7 +11,7 @@
         Пожалуйста введите Ваше имя пользователя и пароль. 
         <asp:HyperLink ID="RegisterHyperLink" runat="server" EnableViewState="false">Зарегистрируйтесь</asp:HyperLink> если Вы не имеете аккаунта.
     </p>
-    <asp:Login ID="LoginUser" runat="server" EnableViewState="false" RenderOuterTable="false">
+    <asp:Login ID="LoginUser" runat="server" EnableViewState="false" RenderOuterTable="false" FailureText="Попытка входа не удалась. Попробуйте еще раз.">
         <LayoutTemplate>
             <span class="failureNotification">
                 <asp:Literal ID="FailureText" runat="server"></asp:Literal>
