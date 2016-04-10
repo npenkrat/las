@@ -12,6 +12,7 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
             NavigationMenu.Visible = Page.User.Identity.IsAuthenticated;
+            //Page.User.IsInRole
         }
     }
 }
