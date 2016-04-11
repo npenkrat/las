@@ -65,6 +65,7 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="AddAddressToArea.aspx" />
+    <Content Include="ErrPage.aspx" />
     <Content Include="NewArea.aspx" />
     <Content Include="NewElevator.aspx" />
     <Content Include="NewRequestor.aspx" />
@@ -173,6 +174,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrPage.aspx.cs">
+      <DependentUpon>ErrPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrPage.aspx.designer.cs">
+      <DependentUpon>ErrPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
