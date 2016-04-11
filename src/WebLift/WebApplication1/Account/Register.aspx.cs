@@ -33,6 +33,10 @@ namespace WebApplication1.Account
             {
                 continueUrl = "~/";
             }
+            /**************Add role*/
+            //Roles.AddUserToRole(RegisterUser.UserName,"Admin");
+            Roles.AddUserToRole(RegisterUser.UserName, "User");
+
             /**************/
          /*   int number = 1;
             string name = RegisterUser.UserName;

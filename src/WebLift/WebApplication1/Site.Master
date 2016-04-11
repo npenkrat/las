@@ -40,13 +40,6 @@
                     ForeColor="Black">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Главная"/>
-                        <asp:MenuItem NavigateUrl="~/List.aspx" Text="Список заявок"/>
-                        <asp:MenuItem NavigateUrl="~/Request.aspx" Text="Добавить заявку"/>
-                        <asp:MenuItem NavigateUrl="~/NewElevator.aspx" Text="Добавить лифт"  />
-                        <asp:MenuItem NavigateUrl="~/NewArea.aspx" Text="Создать участок"/>
-                        <asp:MenuItem NavigateUrl="~/AddAddressToArea.aspx" Text="Добавить новый адрес к участку"/>
-                        <asp:MenuItem NavigateUrl="~/NewRequestor.aspx" Text="Добавить заказчика"/>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Обратная связь"/>
                     </Items>
                 </asp:Menu>
             </div>

@@ -13,7 +13,15 @@ namespace WebApplication1
         void Application_Start(object sender, EventArgs e)
         {
             // Code that runs on application startup
-
+            //Roles.Enabled = true;
+            string[] roles = Roles.GetAllRoles();
+            if (roles.Length == 0) 
+            {
+                Roles.CreateRole("User");
+                Roles.CreateRole("Admin");
+                Roles.CreateRole("Manager");
+                Roles.CreateRole("Mechanic");
+            }
         }
 
         void Application_End(object sender, EventArgs e)

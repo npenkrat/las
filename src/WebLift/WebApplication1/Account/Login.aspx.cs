@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
 
 namespace WebApplication1.Account
 {
@@ -11,10 +12,13 @@ namespace WebApplication1.Account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            RegisterHyperLink.NavigateUrl = "Register.aspx?ReturnUrl=" + HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
+           // RegisterHyperLink.NavigateUrl ="~/About.aspx";
             //LoginUser.UserName
             //LoginUser.Password
-            
+           // if(Roles.IsUserInRole("User"))
+                RegisterHyperLink.NavigateUrl = "Register.aspx?ReturnUrl=" + HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
+               // RegisterHyperLink.NavigateUrl = "~/List.aspx";
+
         }
     }
 }
